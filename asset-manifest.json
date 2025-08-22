@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/react_portfolio/static/js/main.9e95c0be.js",
+    "main.js": "/react_portfolio/static/js/main.b27743b5.js",
     "static/js/453.c25f43ab.chunk.js": "/react_portfolio/static/js/453.c25f43ab.chunk.js",
     "static/media/Garp1.gif": "/react_portfolio/static/media/Garp1.b7c77d1f0140bc4c2ce1.gif",
     "static/media/SevenWonders.png": "/react_portfolio/static/media/SevenWonders.1d62160d1d9151c1ef8d.png",
@@ -12,11 +12,11 @@
     "static/media/Schedule_img.PNG": "/react_portfolio/static/media/Schedule_img.b9d4d8ca2bcbcb4659c7.PNG",
     "index.html": "/react_portfolio/index.html",
     "main.f855e6bc.css.map": "/react_portfolio/static/css/main.f855e6bc.css.map",
-    "main.9e95c0be.js.map": "/react_portfolio/static/js/main.9e95c0be.js.map",
+    "main.b27743b5.js.map": "/react_portfolio/static/js/main.b27743b5.js.map",
     "453.c25f43ab.chunk.js.map": "/react_portfolio/static/js/453.c25f43ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.9e95c0be.js"
+    "static/js/main.b27743b5.js"
   ]
 }
