@@ -1,11 +1,6 @@
 import React from "react";
 
-interface WorkDisplayProps {
-    title: string;
-    image: string[];
-}
-
-const WorkDisplay: React.FC<WorkDisplayProps> = ({ title, image }) => {
+const WorkDisplay = () => {
     return (
         <>
             <div className="">
