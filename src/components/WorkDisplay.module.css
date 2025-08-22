@@ -1,0 +1,12 @@
+.container {
+
+    img {
+        max-height: 400px;
+        width: 100%;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+    }
+}

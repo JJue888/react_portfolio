@@ -1,11 +1,12 @@
 import React from "react";
+import classes from "./WorkDisplay.module.css"
 
-const WorkDisplay = () => {
+function WorkDisplay({title, image}) {
     return (
         <>
-            <div className="">
+            <div className={classes.container}>
                 <img src={image[0]} alt={title}/>
-                <p className="text-white text-center pt-2">{title}</p>
+                <p>{title}</p>
             </div>
         </>
     );
