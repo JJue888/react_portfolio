@@ -1,0 +1,28 @@
+.projects {
+    display: flex;
+
+    li {
+        width: 40%;
+        padding-bottom: 2%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+
+.head {
+    text-align: center;
+    padding-bottom: 2.5%;
+}
+
+.projectContainer {
+    display: flex;
+}
