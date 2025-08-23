@@ -1,26 +1,26 @@
-const textCss = "p-2";
+import classes from "./Contact.module.css"
+
+const contacts = [
+    {type: 'Email', link: "mailto:joshuajue888@gmail.com", text: "joshuajue888@gmail.com"},
+    {type: 'LinkedIn', link: "https://www.linkedin.com/in/josh-j-100147191/", text: "here"},
+    {type: 'GitHub', link: "https://github.com/JJue888", text: "here"},
+]
 
 function ContactPage() {
     return (
         <>
-            <div id="Contact" className="extra">
-                <h2 className="text-2xl text-center pb-8 pt-4">Contact Info</h2>
+            <div className={classes.contact}>
+                <header>
+                    <h1>Contact Info</h1>
+                </header>
                 <ul className="">
-                    <li className={textCss}>
-                        <p>Email:
-                            <a href="mailto:joshuajue888@gmail.com">joshuajue888@gmail.com</a>
-                        </p>
-                    </li>
-                    <li className={textCss}>
-                        <p>LinkedIn:
-                            <a className="contact" href="https://www.linkedin.com/in/josh-j-100147191/">here</a>
-                        </p>
-                    </li>
-                    <li className={textCss}>
-                        <p>GitHub:
-                            <a className="contact" href="https://github.com/JJue888">here</a>
-                        </p>
-                    </li>
+                    {contacts.map((contact) => (
+                        <li key={contact.type}>
+                            <p>{contact.type}:
+                                <a href={contact.link}> {contact.text}</a>
+                            </p>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </>
