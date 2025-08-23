@@ -1,20 +1,14 @@
 import {useParams} from "react-router-dom";
 
-import { PROJECT_DATA } from "../data/projects";
+import {PROJECT_DATA} from "../data/projects";
+import WorkDetails from "../components/WorkDetails";
 
 function ProjectDetailsPage() {
     const params = useParams();
-    const foundProject = PROJECT_DATA.find((project)   => project.title === params.projectTitle);
+    const foundProject = PROJECT_DATA.find((project) => project.title === params.projectTitle);
     return (
         <>
-            <h1>Projects</h1>
-            <p>{params.projectTitle}</p>
-            <img src={foundProject.image[0]} alt={params.projectTitle} />
-            <ul>
-                {foundProject.description.map((description, index) => (
-                    <p key={index}>{description}</p>
-                ))}
-            </ul>
+            <WorkDetails {...foundProject} />
         </>)
 }
 

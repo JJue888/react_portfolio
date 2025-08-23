@@ -1,0 +1,21 @@
+.experiences {
+    display: flex;
+    justify-content: space-around;
+
+    li {
+        width: 40%;
+        padding-bottom: 2%;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+}
+
+.head {
+    text-align: center;
+    padding-bottom: 2.5%;
+}
