@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/react_portfolio/static/js/main.b27743b5.js",
+    "main.css": "/react_portfolio/static/css/main.3647d7cf.css",
+    "main.js": "/react_portfolio/static/js/main.99601b3f.js",
     "static/js/453.c25f43ab.chunk.js": "/react_portfolio/static/js/453.c25f43ab.chunk.js",
     "static/media/Garp1.gif": "/react_portfolio/static/media/Garp1.b7c77d1f0140bc4c2ce1.gif",
+    "static/media/ccdcCareerPage.png": "/react_portfolio/static/media/ccdcCareerPage.84691d51877bb0c847b9.png",
     "static/media/SevenWonders.png": "/react_portfolio/static/media/SevenWonders.1d62160d1d9151c1ef8d.png",
     "static/media/webmaster1.png": "/react_portfolio/static/media/webmaster1.0d09673b7c07c170660f.png",
     "static/media/airport_database.PNG": "/react_portfolio/static/media/airport_database.7ec43721bac7b336966b.PNG",
@@ -11,12 +12,12 @@
     "static/media/juejw.jpg": "/react_portfolio/static/media/juejw.b0da80777be49eb35a00.jpg",
     "static/media/Schedule_img.PNG": "/react_portfolio/static/media/Schedule_img.b9d4d8ca2bcbcb4659c7.PNG",
     "index.html": "/react_portfolio/index.html",
-    "main.f855e6bc.css.map": "/react_portfolio/static/css/main.f855e6bc.css.map",
-    "main.b27743b5.js.map": "/react_portfolio/static/js/main.b27743b5.js.map",
+    "main.3647d7cf.css.map": "/react_portfolio/static/css/main.3647d7cf.css.map",
+    "main.99601b3f.js.map": "/react_portfolio/static/js/main.99601b3f.js.map",
     "453.c25f43ab.chunk.js.map": "/react_portfolio/static/js/453.c25f43ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.b27743b5.js"
+    "static/css/main.3647d7cf.css",
+    "static/js/main.99601b3f.js"
   ]
 }
