@@ -10,6 +10,6 @@ function WorkDisplay({title, image}) {
             </div>
         </>
     );
-};
+}
 
 export default WorkDisplay;

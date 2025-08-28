@@ -1,9 +1,9 @@
 .header {
-    max-width: 60rem;
     margin: auto;
     padding: 2rem;
     display: flex;
     justify-content: center;
+    background-color: rgba(62, 62, 62, 0.8);
 }
 
 .list {
@@ -13,10 +13,12 @@
 
 .list a {
     text-decoration: none;
-    color: var(--color-primary-400);
+    color: white;
 }
 
 .list a:hover,
 .list a.active {
     color: var(--color-primary-800);
 }
+
+

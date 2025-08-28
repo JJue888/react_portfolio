@@ -6,6 +6,10 @@
         padding-bottom: 2%;
         display: flex;
         justify-content: center;
+
+        a {
+            width: 100%;
+        }
     }
 
     ul {

@@ -9,9 +9,6 @@ const navLinks = [
     {title: "Contact", href: "/react_portfolio/contact"},
 ]
 
-const bgColor = 'bg-gray-800';
-const modalColor = 'bg-gray-900';
-
 function NavBar() {
 
     return (
@@ -20,7 +17,8 @@ function NavBar() {
                 <ul className={classes.list}>
                     {navLinks.map((link, index) => (
                         <li key={index}>
-                            <NavLink to={link.href} className={({isActive}) => isActive ? classes.active : undefined}>{link.title}</NavLink>
+                            <NavLink to={link.href} end={link.title === "Home"}
+                                     className={({isActive}) => isActive ? classes.active : undefined}>{link.title}</NavLink>
                         </li>
                     ))}
                 </ul>
