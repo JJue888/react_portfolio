@@ -24,7 +24,7 @@ code {
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #121212;
+    /*background-color: #121212;*/
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -70,4 +70,20 @@ a {
 
 header h1 {
     text-align: center;
+}
+
+/*Dark Mode*/
+
+body {
+    --color-background: #fafafa;
+    --color-foreground: #1f2023;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+}
+
+body.dark {
+    --color-background: #1f2023;
+    --color-foreground: #efefef;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
 }

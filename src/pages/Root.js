@@ -6,10 +6,10 @@ function RootLayout() {
 
 
     return <>
-        <NavBar />
+        <NavBar/>
         <main>
             {navigation.state === 'loading' && <p>Loading...</p>}
-            <Outlet />
+            <Outlet/>
         </main>
     </>
 }

@@ -1,5 +1,6 @@
 import {NavLink} from "react-router-dom";
 import classes from "./NavBar.module.css";
+import {DarkModeToggle} from "./DarkModeToggle";
 
 const navLinks = [
     {title: "Home", href: "/react_portfolio/"},
@@ -23,6 +24,9 @@ function NavBar() {
                     ))}
                 </ul>
             </nav>
+            <div className={classes.right}>
+                <DarkModeToggle/>
+            </div>
         </header>
     );
 }

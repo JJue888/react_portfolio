@@ -21,4 +21,8 @@
     color: var(--color-primary-800);
 }
 
+.right {
+    margin-left: auto;
+}
+
 
