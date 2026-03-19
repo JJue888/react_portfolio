@@ -1,0 +1,41 @@
+.page {
+    min-height: calc(100vh - 64px);
+    background-color: var(--color-bg);
+    transition: background-color 0.3s ease;
+    animation: fadeUp 0.45s ease both;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Not-found state ───────────────────────────────── */
+.notFound {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.notFound p {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.notFoundLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    transition: opacity 0.2s ease;
+}
+
+.notFoundLink:hover {
+    opacity: 0.7;
+}

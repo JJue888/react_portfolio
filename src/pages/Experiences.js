@@ -1,30 +1,25 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import WorkDisplay from "../components/WorkDisplay";
-import {EXPERIENCE_DATA} from "../data/experience";
-import classes from "./Experiences.module.css"
+import { EXPERIENCE_DATA } from "../data/experience";
+import classes from "./Experiences.module.css";
 
 function ExperiencesPage() {
-
     return (
-        <>
-            <div>
-                <header className={classes.head}>
-                    <h1 className="">Experiences</h1>
-                </header>
-                <div>
-                    <ul className={classes.experiences}>
-                        {EXPERIENCE_DATA.map((project) => (
-                            <li key={project.title} className="">
-                                <Link to={project.title}>
-                                    <WorkDisplay {...project} />
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+        <div className={classes.page}>
+            <header className={classes.head}>
+                <span className={classes.eyebrow}>Career</span>
+                <h1>Experiences</h1>
+            </header>
+
+            <div className={classes.grid}>
+                {EXPERIENCE_DATA.map((experience) => (
+                    <Link to={experience.title} key={experience.title}>
+                        <WorkDisplay {...experience} />
+                    </Link>
+                ))}
             </div>
-        </>
-    )
+        </div>
+    );
 }
 
 export default ExperiencesPage;

@@ -1,29 +1,25 @@
 import { PROJECT_DATA } from "../data/projects";
 import WorkDisplay from "../components/WorkDisplay";
-import {Link} from "react-router-dom";
-import classes from "./Projects.module.css"
+import { Link } from "react-router-dom";
+import classes from "./Projects.module.css";
 
 function ProjectsPage() {
     return (
-        <>
-            <div>
-                <header className={classes.head}>
-                    <h1 className="">Projects</h1>
-                </header>
-                <div className={classes.projects}>
-                    <ul>
-                        {PROJECT_DATA.map((project) => (
-                            <li key={project.title} className={classes.projectContainer}>
-                                <Link to={project.title}>
-                                    <WorkDisplay {...project} />
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+        <div className={classes.page}>
+            <header className={classes.head}>
+                <span className={classes.eyebrow}>Portfolio</span>
+                <h1>Projects</h1>
+            </header>
+
+            <div className={classes.grid}>
+                {PROJECT_DATA.map((project) => (
+                    <Link to={project.title} key={project.title}>
+                        <WorkDisplay {...project} />
+                    </Link>
+                ))}
             </div>
-        </>
-    )
+        </div>
+    );
 }
 
 export default ProjectsPage;

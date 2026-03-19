@@ -1,60 +1,63 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;500;600;700;800&display=swap');
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-* {
+*, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    /* Palette */
+    --color-bg: #f5f4f0;
+    --color-surface: #eceae3;
+    --color-border: #d6d3c8;
+    --color-text-primary: #1a1916;
+    --color-text-secondary: #6b6860;
+    --color-text-muted: #a09e99;
+    --color-accent: #2a5cff;
+    --color-accent-soft: rgba(42, 92, 255, 0.08);
+
+    /* Dark mode tokens (overridden below) */
+    --color-background: var(--color-bg);
+    --color-foreground: var(--color-text-primary);
+
+    /* Fonts */
+    --font-display: 'Syne', sans-serif;
+    --font-mono: 'DM Mono', monospace;
+
+    /* Radii */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+
+    --transition: 0.2s ease;
+
     font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    /*background-color: #121212;*/
-
+    line-height: 1.6;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+}
 
-    --color-gray-100: #f4f3f1;
-    --color-gray-200: #dddbd8;
-    --color-gray-300: #ccc9c6;
-    --color-gray-400: #aeaba7;
-    --color-gray-500: #8a8784;
-    --color-gray-600: #656360;
-    --color-gray-700: #4b4a47;
-    --color-gray-800: #31302e;
-    --color-gray-900: #1f1d1b;
-
-    --color-primary-100: #fcf3e1;
-    --color-primary-200: #fceccd;
-    --color-primary-300: #fae1af;
-    --color-primary-400: #fbd997;
-    --color-primary-500: #ffd37c;
-    --color-primary-600: #f9c762;
-    --color-primary-700: #fbc14d;
-    --color-primary-800: #fab833;
-    --color-primary-900: #f6ad1b;
+/* ─── Dark mode ─────────────────────────────────────── */
+body.dark {
+    --color-bg: #13120f;
+    --color-surface: #1d1c18;
+    --color-border: #2e2d28;
+    --color-text-primary: #f0ede6;
+    --color-text-secondary: #9e9b94;
+    --color-text-muted: #5c5a55;
+    --color-accent: #5b82ff;
+    --color-accent-soft: rgba(91, 130, 255, 0.1);
 }
 
 body {
-    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-mono);
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ul {
@@ -65,25 +68,20 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
-header h1 {
-    text-align: center;
+h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
 }
 
-/*Dark Mode*/
-
-body {
-    --color-background: #fafafa;
-    --color-foreground: #1f2023;
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+code {
+    font-family: var(--font-mono);
 }
 
-body.dark {
-    --color-background: #1f2023;
-    --color-foreground: #efefef;
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+img {
+    display: block;
+    max-width: 100%;
 }

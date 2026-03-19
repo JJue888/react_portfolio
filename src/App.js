@@ -1,5 +1,5 @@
 import './App.css';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./pages/Root";
 import HomePage from "./pages/Home";
 import ProjectsPage from "./pages/Projects";
@@ -10,22 +10,23 @@ import ExperienceDetailsPage from "./pages/ExperienceDetails";
 import ContactPage from "./pages/Contact";
 
 const router = createBrowserRouter([
-        {
-            path: "/react_portfolio/", element: <RootLayout/>, children: [
-                {index: true, element: <HomePage/>},
-                {path: "about", element: <AboutPage/>},
-                {path: 'projects', element: <ProjectsPage/>},
-                {path: "projects/:projectTitle", element: <ProjectDetailsPage/>},
-                {path: 'experiences', element: <ExperiencesPage/>},
-                {path: "experiences/:experienceTitle", element: <ExperienceDetailsPage/>},
-                {path: 'contact', element: <ContactPage/>}
-            ]
-        },
-    ]
-)
+    {
+        path: "/react_portfolio/",
+        element: <RootLayout />,
+        children: [
+            { index: true, element: <HomePage /> },
+            { path: "about", element: <AboutPage /> },
+            { path: "projects", element: <ProjectsPage /> },
+            { path: "projects/:projectTitle", element: <ProjectDetailsPage /> },
+            { path: "experiences", element: <ExperiencesPage /> },
+            { path: "experiences/:experienceTitle", element: <ExperienceDetailsPage /> },
+            { path: "contact", element: <ContactPage /> },
+        ],
+    },
+]);
 
 function App() {
-    return <RouterProvider router={router}></RouterProvider>;
+    return <RouterProvider router={router} />;
 }
 
 export default App;
