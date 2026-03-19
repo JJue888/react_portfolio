@@ -13,10 +13,6 @@ const navLinks = [
 function NavBar() {
     return (
         <header className={classes.header}>
-            <span className={classes.logo}>
-                dev<span>.</span>
-            </span>
-
             <nav>
                 <ul className={classes.list}>
                     {navLinks.map((link, index) => (
